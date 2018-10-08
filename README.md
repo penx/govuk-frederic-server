@@ -22,3 +22,4 @@ Work in progress Node application that plans to:
 - Support using redis for sessions, possibly by using a combination of: connect-redis, express-session, openid-client and passport. Maybe use similar approach to Winston transports.
 - flag to enable ssr
 - read in feature flags from environment variables and make available to react app on front end. Configurable to support only sending a subset of feature flags to client.
+- uses @govuk-frederic/example application by default with some default config options, but this can be overridden by peer and/or config settings.
