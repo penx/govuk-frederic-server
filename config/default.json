@@ -1,3 +1,9 @@
 {
-  "internalPort": 8000
+  "internalPort": 8000,
+  "logging": {
+    "toFile":false,
+  },
+  "staticAccessRights": {
+    "somefile.*.js": ["role1", "role2"]
+  }
 }
