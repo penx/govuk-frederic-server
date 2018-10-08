@@ -1,0 +1,19 @@
+{
+  "name": "@govuk-frederic/server",
+  "version": "0.0.1",
+  "description": "Node server for the Frederic React modularisation stack",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/penx/govuk-frederic-server.git"
+  },
+  "author": "Alasdair McLeay",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/penx/govuk-frederic-server/issues"
+  },
+  "homepage": "https://github.com/penx/govuk-frederic-server#readme"
+}
