@@ -41,8 +41,13 @@ Work in progress Node application that plans to:
   - https://strongloop.com/strongblog/node-js-deploy-production-best-practice/
   - https://devcenter.heroku.com/articles/node-best-practices
 - Authentication and Sessions
-  - [ ] Supports openid connect, by default set up to use Auth0 https://auth0.com/docs/protocols/oidc but extendable to other systems using config settings.
+  - [ ] Implements OpenID Connect using Auth0 https://auth0.com/docs/protocols/oidc
+  - [ ] Configurable to other OpenID systems using config settings
+  - [ ] Use [OpenID Connect Code Flow]([https://openid.net/specs/openid-connect-core-1_0.html#CodeFlowAuth)
+    - [ ] Manage sessions on the server
+    - [ ] Exchange Authorization Code for an ID Token that is kept in the user's session on the server and is not revealed to client
+    - [ ] Follow auth0 tutorial https://auth0.com/docs/api-auth/tutorials/authorization-code-grant
+  - [ ] Provides URL of authenticated API endpoint to React application
   - [ ] Configuration to allows webpack assets to be paired with roles, only serve up assets if user is authenticated and belongs to one of a given set of roles.
   - [ ] Configuration to require authentication to serve up html boilerplate and initial React entry point. Allow a redirect url to be specified in configuration if user is not authenticated.
-  - [ ] Support [OpenID Connect Code Flow]([https://openid.net/specs/openid-connect-core-1_0.html#CodeFlowAuth) to manage sessions and exchange Authorization Code for an ID Token that is kept in the user's session on the server.
   - [ ] Support using redis for sessions, possibly by using a combination of: connect-redis, express-session, openid-client and passport. Maybe use similar approach to Winston transports.
