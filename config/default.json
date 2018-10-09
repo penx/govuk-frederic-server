@@ -1,10 +1,16 @@
 {
   "internalPort": 8000,
+  "versionRoute": true,
   "logging": {
     "toFile": false,
     "toConsole": false
   },
   "staticAccessRights": {
     "somefile.*.js": ["role1", "role2"]
+  },
+  "reactApp": {
+    "assetPath": "node_modules/@govuk-frederic/example/build",
+    "assetRoute": "/govuk-frederic-example",
+    "htmlPath": "node_modules/@govuk-frederic/example/build/index.html"
   }
 }
