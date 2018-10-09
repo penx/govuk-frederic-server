@@ -1,4 +1,4 @@
-# Gov.UK Frederic Server
+# GOV.UK Frederic Server
 
 Work in progress Node application that plans to:
 
