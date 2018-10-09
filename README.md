@@ -9,7 +9,25 @@ Work in progress Node application that plans to:
 - [x] Use Winston for logging.
 - [ ] Can be used standalone or as dependency.
 - [ ] If as dependency, can pass in Winston transport.
-- Follows node web server best practices where applicable
+- Follows node web server best practices where applicable:
+  - [ ] TLS
+  - [ ] Helmet
+  - [ ] Use cookies securely, Don’t use the default session cookie name
+  - [ ] Set cookie flags and scope
+  - [ ] Ensure your dependencies are secure, use npm audit, Snyk and/or nsp
+  - [ ] Brute Force Protection
+  - [x] CSRF for state-changing requests N/A
+  - [ ] Use gzip compression
+  - [x] Don’t use synchronous functions
+  - [ ] lint for sync functions
+  - [ ] use trace-sync-io flag
+  - [ ] Use middleware to serve static files
+  - [ ] Support/document using reverse proxy for static files
+  - [ ] Use [debug](https://www.npmjs.com/package/debug) for logging debug messages (via Winston?)
+  - [x] Do logging right
+  - [ ] Handle exceptions properly
+  - [x] Lowercase file names
+- Best practice sources:
   - https://expressjs.com/en/advanced/best-practice-security.html
   - https://blog.risingstack.com/node-js-security-checklist/
   - https://strongloop.com/strongblog/best-practices-for-express-in-production-part-one-security/
