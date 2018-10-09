@@ -3,12 +3,18 @@
 Work in progress Node application that plans to:
 
 - [x] Take output from a Webpack/create react app build using @govuk-frederic/example application by default
-- [ ] use peer application and/or config settings to use a different output from create-react-app
+- [x] Use config settings to use a different output from create-react-app
 - [x] Serve as a React application with boilerplate html.
 - [x] Use node-config for loading configuration.
 - [x] Use Winston for logging.
-- [ ] Can be used standalone or as dependency.
-- [ ] If as dependency, can pass in Winston transport.
+- [x] Can be used standalone
+- [ ] Can be used as a dependency.
+  - [ ] Can pass in Winston transport
+  - [ ] Config works when a dependency
+  - [ ] Peer application can specify React application to use
+- [ ] Flag to enable server side rendering of React app
+- [ ] Read in feature flags from config/environment variables and make available to react app on front end
+- [ ] Configurable to support only sending a subset of feature flags to client
 - Follows node web server best practices where applicable:
   - [ ] TLS
   - [ ] Helmet
@@ -19,8 +25,8 @@ Work in progress Node application that plans to:
   - [x] CSRF for state-changing requests N/A
   - [ ] Use gzip compression
   - [x] Don’t use synchronous functions
-  - [ ] lint for sync functions
-  - [ ] use trace-sync-io flag
+  - [ ] Lint for sync functions
+  - [ ] Use trace-sync-io flag
   - [ ] Use middleware to serve static files
   - [ ] Support/document using reverse proxy for static files
   - [ ] Use [debug](https://www.npmjs.com/package/debug) for logging debug messages (via Winston?)
@@ -34,10 +40,9 @@ Work in progress Node application that plans to:
   - https://strongloop.com/strongblog/best-practices-for-express-in-production-part-two-performance-and-reliability/
   - https://strongloop.com/strongblog/node-js-deploy-production-best-practice/
   - https://devcenter.heroku.com/articles/node-best-practices
-- [ ] Supports openid connect, by default set up to use Auth0 https://auth0.com/docs/protocols/oidc but extendable to other systems using config settings.
-- [ ] Configuration to allows webpack assets to be paired with roles, only serve up assets if user is authenticated and belongs to one of a given set of roles.
-- [ ] Configuration to require authentication to serve up html boilerplate and initial React entry point. Allow a redirect url to be specified in configuration if user is not authenticated.
-- [ ] Support [OpenID Connect Code Flow]([https://openid.net/specs/openid-connect-core-1_0.html#CodeFlowAuth) to manage sessions and exchange Authorization Code for an ID Token that is kept in the user's session on the server.
-- [ ] Support using redis for sessions, possibly by using a combination of: connect-redis, express-session, openid-client and passport. Maybe use similar approach to Winston transports.
-- [ ] flag to enable ssr
-- [ ] read in feature flags from environment variables and make available to react app on front end. Configurable to support only sending a subset of feature flags to client.
+- Authentication and Sessions
+  - [ ] Supports openid connect, by default set up to use Auth0 https://auth0.com/docs/protocols/oidc but extendable to other systems using config settings.
+  - [ ] Configuration to allows webpack assets to be paired with roles, only serve up assets if user is authenticated and belongs to one of a given set of roles.
+  - [ ] Configuration to require authentication to serve up html boilerplate and initial React entry point. Allow a redirect url to be specified in configuration if user is not authenticated.
+  - [ ] Support [OpenID Connect Code Flow]([https://openid.net/specs/openid-connect-core-1_0.html#CodeFlowAuth) to manage sessions and exchange Authorization Code for an ID Token that is kept in the user's session on the server.
+  - [ ] Support using redis for sessions, possibly by using a combination of: connect-redis, express-session, openid-client and passport. Maybe use similar approach to Winston transports.
