@@ -2,11 +2,12 @@
 
 Work in progress Node application that plans to:
 
-- Take output from a Webpack/create react app build.
-- Serve as a React application with boilerplate html.
-- Use node-config for loading configuration.
-- Use Winston for logging.
-- Can be used standalone or as dependency.
+- [x] Take output from a Webpack/create react app build using @govuk-frederic/example application by default
+- [ ] use peer application and/or config settings to use a different output from create-react-app
+- [x] Serve as a React application with boilerplate html.
+- [x] Use node-config for loading configuration.
+- [x] Use Winston for logging.
+- [ ] Can be used standalone or as dependency.
 - If as dependency, can pass in Winston transport.
 - Follows node web server best practices where applicable
   - https://expressjs.com/en/advanced/best-practice-security.html
@@ -22,4 +23,3 @@ Work in progress Node application that plans to:
 - Support using redis for sessions, possibly by using a combination of: connect-redis, express-session, openid-client and passport. Maybe use similar approach to Winston transports.
 - flag to enable ssr
 - read in feature flags from environment variables and make available to react app on front end. Configurable to support only sending a subset of feature flags to client.
-- uses @govuk-frederic/example application by default with some default config options, but this can be overridden by peer and/or config settings.
