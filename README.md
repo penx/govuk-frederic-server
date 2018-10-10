@@ -51,3 +51,11 @@ Work in progress Node application that plans to:
   - [ ] Configuration to allows webpack assets to be paired with roles, only serve up assets if user is authenticated and belongs to one of a given set of roles.
   - [ ] Configuration to require authentication to serve up html boilerplate and initial React entry point. Allow a redirect url to be specified in configuration if user is not authenticated.
   - [ ] Support using redis for sessions, possibly by using a combination of: connect-redis, express-session, openid-client and passport. Maybe use similar approach to Winston transports.
+
+# Frederic projects:
+
+https://github.com/stevesims/govuk-frederic
+https://github.com/penx/govuk-frederic-server
+https://github.com/penx/govuk-frederic-app-container
+https://github.com/penx/govuk-frederic-example
+https://github.com/penx/govuk-frederic-example-module
