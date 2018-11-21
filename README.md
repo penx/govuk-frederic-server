@@ -17,7 +17,7 @@ Work in progress Node application that plans to:
 - [ ] Configurable to support only sending a subset of feature flags to client
 - Follows node web server best practices where applicable:
   - [ ] TLS
-  - [ ] Helmet
+  - [x] Helmet
   - [ ] Use cookies securely, Don’t use the default session cookie name
   - [ ] Set cookie flags and scope
   - [ ] Ensure your dependencies are secure, use npm audit, Snyk and/or nsp
