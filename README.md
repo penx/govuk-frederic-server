@@ -8,6 +8,7 @@ Work in progress Node application that plans to:
 - [x] Use node-config for loading configuration.
 - [x] Use Winston for logging.
 - [x] Can be used standalone
+- [ ] Can be configured to point to a separately running webpack-dev-server
 - [ ] Can be used as a dependency.
   - [ ] Can pass in Winston transport
   - [ ] Config works when a dependency

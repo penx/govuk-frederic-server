@@ -1,5 +1,6 @@
 {
   "logging": {
     "toConsole": true
-  }
+  },
+  "apiUrl": "http://localhost:8006/graphql"
 }

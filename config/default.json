@@ -12,5 +12,6 @@
     "assetPath": "node_modules/@govuk-frederic/example/build",
     "assetRoute": "/govuk-frederic-example",
     "htmlPath": "node_modules/@govuk-frederic/example/build/index.html"
-  }
+  },
+  "apiUrl": "http://example.com/graphql"
 }
